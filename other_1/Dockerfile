@@ -2,7 +2,7 @@ FROM python:alpine3.15
 
 WORKDIR serverback
 
-COPY . ./serverback
+COPY . .
 
 RUN pip install -i https://mirror.ustc.edu.cn/pypi/web/simple -r requirements.txt
 
