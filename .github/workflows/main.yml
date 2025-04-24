@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubantu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello word!
+    - name: Run a multi-line script
+      run:
+        echo Helle github action,
+        echo Make a new actions.
